@@ -1,0 +1,31 @@
+2025-01-23 04:29:34 - HV000001: Hibernate Validator 8.0.1.Final
+2025-01-23 04:29:34 - Starting PostgresApplication v0.0.1 using Java 21 with PID 1 (/app/app.jar started by root in /app)
+2025-01-23 04:29:34 - The following 1 profile is active: "prod"
+2025-01-23 04:29:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-23 04:29:36 - Finished Spring Data repository scanning in 165 ms. Found 4 JPA repository interfaces.
+2025-01-23 04:29:38 - Tomcat initialized with port 9012 (https)
+2025-01-23 04:29:38 - Initializing ProtocolHandler ["https-jsse-nio-9012"]
+2025-01-23 04:29:38 - Starting service [Tomcat]
+2025-01-23 04:29:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-23 04:29:38 - Initializing Spring embedded WebApplicationContext
+2025-01-23 04:29:38 - Root WebApplicationContext: initialization completed in 3184 ms
+2025-01-23 04:29:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-23 04:29:38 - HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-01-23 04:29:38 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-01-23 04:29:39 - HikariPool-1 - Starting...
+2025-01-23 04:29:39 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d96d434
+2025-01-23 04:29:39 - HikariPool-1 - Start completed.
+2025-01-23 04:29:39 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-01-23 04:29:40 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-23 04:29:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 04:29:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-23 04:29:42 - Starting ProtocolHandler ["https-jsse-nio-9012"]
+2025-01-23 04:29:42 - Connector [https-jsse-nio-9012], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/root/.keystore] using alias [tomcat] with trust store [null]
+2025-01-23 04:29:42 - Tomcat started on port 9012 (https) with context path '/'
+2025-01-23 04:29:42 - Started PostgresApplication in 8.215 seconds (process running for 9.117)
+2025-01-23 04:33:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-23 04:33:26 - Initializing Servlet 'dispatcherServlet'
+2025-01-23 04:33:26 - Completed initialization in 3 ms
+2025-01-23 10:20:06 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-23 10:20:06 - HikariPool-1 - Shutdown initiated...
+2025-01-23 10:20:06 - HikariPool-1 - Shutdown completed.

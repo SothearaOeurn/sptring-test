@@ -1,0 +1,41 @@
+2025-01-30 15:24:16 - HV000001: Hibernate Validator 8.0.1.Final
+2025-01-30 15:24:16 - Starting PostgresApplication using Java 21.0.3 with PID 7296 (/Users/sotheara.oeurn/Projects/SpringBoot/sptring-test/postgres/target/classes started by sotheara.oeurn in /Users/sotheara.oeurn/Projects/SpringBoot/sptring-test)
+2025-01-30 15:24:16 - The following 1 profile is active: "dev"
+2025-01-30 15:24:16 - The Class-Path manifest attribute in /Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2025-01-30 15:24:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-30 15:24:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-30 15:24:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-30 15:24:17 - Finished Spring Data repository scanning in 171 ms. Found 4 JPA repository interfaces.
+2025-01-30 15:24:19 - Tomcat initialized with port 8085 (http)
+2025-01-30 15:24:19 - Initializing ProtocolHandler ["http-nio-8085"]
+2025-01-30 15:24:19 - Starting service [Tomcat]
+2025-01-30 15:24:19 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-01-30 15:24:19 - Initializing Spring embedded WebApplicationContext
+2025-01-30 15:24:19 - Root WebApplicationContext: initialization completed in 2957 ms
+2025-01-30 15:24:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-30 15:24:19 - HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-01-30 15:24:19 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-01-30 15:24:19 - HikariPool-1 - Starting...
+2025-01-30 15:24:20 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7da57eb
+2025-01-30 15:24:20 - HikariPool-1 - Start completed.
+2025-01-30 15:24:20 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-01-30 15:24:21 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-30 15:24:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 15:24:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-30 15:24:23 - LiveReload server is running on port 35729
+2025-01-30 15:24:23 - Starting ProtocolHandler ["http-nio-8085"]
+2025-01-30 15:24:23 - Tomcat started on port 8085 (http) with context path '/'
+2025-01-30 15:24:23 - Started PostgresApplication in 7.963 seconds (process running for 8.988)
+2025-01-30 15:25:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-30 15:25:03 - Initializing Servlet 'dispatcherServlet'
+2025-01-30 15:25:03 - Completed initialization in 33 ms
+2025-01-30 15:50:35 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m45s27ms).
+2025-01-30 17:26:44 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m8s40ms).
+2025-01-30 18:48:55 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m11s199ms).
+2025-01-30 20:01:08 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m13s234ms).
+2025-01-30 20:34:48 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m39s610ms).
+2025-01-30 21:18:00 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s112ms).
+2025-01-30 21:29:14 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s830ms).
+2025-01-30 23:17:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-30 23:17:23 - HikariPool-1 - Shutdown initiated...
+2025-01-30 23:17:23 - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,72 @@
+server:
+  port: ${SERVICE_PORT}
+spring:
+  application:
+    name: postgres
+  profiles:
+    active: ${ENVIRONMENT}
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: ${DATABASE_DRIVER}
+  jpa:
+    database-platform: ${DATABASE_PLATFORM}
+    properties:
+      hibernate:
+        ddl-auto: validate
+        default_schema: ${DATABASE_SCHEMA}
+      show-sql: true
+  flyway:
+    enabled: true
+    table: tb_migration
+    locations: classpath:db/migration
+
+keycloak:
+  auth-server-url: ${KEYCLOAK.SERVER_URL}
+  realm: ${KEYCLOAK.REALM}
+  client-id: ${KEYCLOAK.CLIENT_ID}
+  client-secret: ${KEYCLOAK.CLIENT_SECRET}
+  admin:
+    username: ${KEYCLOAK.USERNAME}
+    password: ${KEYCLOAK.PASSWORD}
+  resource: ${KEYCLOAK.RESOURCE}
+
+app:
+  log:
+    path: ${APP_LOG_PATH}
+    level: ${APP_LOG_LEVEL}
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: uat
+
+server:
+  ssl:
+    certificate: ${SSL_CERTIFICATE_FILE}
+    certificate-private-key: ${SSL_CERTIFICATE_KEY}
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+server:
+  ssl:
+    certificate: ${SSL_CERTIFICATE_FILE}
+    certificate-private-key: ${SSL_CERTIFICATE_KEY}
+
+
+

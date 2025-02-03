@@ -1,0 +1,33 @@
+2024-12-18 14:44:20 - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-18 14:44:20 - Starting PostgresApplication using Java 21.0.5 with PID 25830 (/Users/sotheara.oeurn/Projects/SpringBoot/sptring-test/postgres/target/classes started by sotheara.oeurn in /Users/sotheara.oeurn/Projects/SpringBoot/sptring-test)
+2024-12-18 14:44:20 - The following 1 profile is active: "prod"
+2024-12-18 14:44:20 - The Class-Path manifest attribute in /Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/Users/sotheara.oeurn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+2024-12-18 14:44:20 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-18 14:44:20 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-18 14:44:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18 14:44:20 - Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2024-12-18 14:44:21 - Tomcat initialized with port 8085 (https)
+2024-12-18 14:44:21 - Initializing ProtocolHandler ["https-jsse-nio-8085"]
+2024-12-18 14:44:21 - Starting service [Tomcat]
+2024-12-18 14:44:21 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-18 14:44:21 - Initializing Spring embedded WebApplicationContext
+2024-12-18 14:44:21 - Root WebApplicationContext: initialization completed in 779 ms
+2024-12-18 14:44:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18 14:44:21 - HHH000412: Hibernate ORM core version 6.1.6.Final
+2024-12-18 14:44:21 - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-12-18 14:44:21 - HikariPool-1 - Starting...
+2024-12-18 14:44:21 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b2a9787
+2024-12-18 14:44:21 - HikariPool-1 - Start completed.
+2024-12-18 14:44:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-18 14:44:21 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-18 14:44:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18 14:44:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18 14:44:22 - LiveReload server is running on port 35729
+2024-12-18 14:44:22 - Starting ProtocolHandler ["https-jsse-nio-8085"]
+2024-12-18 14:44:22 - Connector [https-jsse-nio-8085], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/sotheara.oeurn/.keystore] using alias [tomcat] with trust store [null]
+2024-12-18 14:44:22 - Tomcat started on port 8085 (https) with context path '/'
+2024-12-18 14:44:22 - Started PostgresApplication in 2.631 seconds (process running for 2.931)
+2024-12-18 15:08:58 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m36s921ms).
+2024-12-18 17:42:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18 17:42:21 - HikariPool-1 - Shutdown initiated...
+2024-12-18 17:42:21 - HikariPool-1 - Shutdown completed.

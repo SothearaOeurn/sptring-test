@@ -1,0 +1,3 @@
+2024-12-28 10:34:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-28 10:34:29 - HikariPool-1 - Shutdown initiated...
+2024-12-28 10:34:29 - HikariPool-1 - Shutdown completed.

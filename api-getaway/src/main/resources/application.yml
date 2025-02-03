@@ -1,0 +1,48 @@
+server:
+  port: ${SERVICE_PORT}
+spring:
+  application:
+    name: api-getaway
+  profiles:
+    active: ${ENVIRONMENT}
+  cloud:
+    gateway:
+      routes:
+        - id: postgres
+          uri: ${USER_SERVICE}
+          predicates:
+            - Path=/api/**
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: uat
+
+server:
+  ssl:
+    certificate: ${SSL_CERTIFICATE_FILE}
+    certificate-private-key: ${SSL_CERTIFICATE_KEY}
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+server:
+  ssl:
+    certificate: ${SSL_CERTIFICATE_FILE}
+    certificate-private-key: ${SSL_CERTIFICATE_KEY}
+
+
+

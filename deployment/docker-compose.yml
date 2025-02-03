@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: db-app
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./db/config/.env
+    volumes:
+      - ./db/volumes/postgres_data:/var/lib/postgresql/data
+
+  migration:
+    image: migration-db
+    container_name: migration
+    ports:
+      - "2000:2000"
+    env_file:
+      - ./migrations/config/.env
+    depends_on:
+      - db
+
+  api-getaway:
+    image: getaway
+    container_name: getaway
+    ports:
+      - "9015:9015"
+    env_file:
+      - ./getaway/config/.env
+    volumes:
+      - ./ssl:/home/deployment/ssl
+      - ./keystore/cacerts:/usr/local/openjdk-21/lib/security/cacerts
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    ports:
+      - "5435:5432"
+    env_file:
+      - ./postgres/config/.env
+    volumes:
+      - ./keycloak/volumes/postgres_data:/var/lib/postgresql/data
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:20.0
+    container_name: keycloak-container
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    env_file:
+      - ./keycloak/config/.env
+    command: ["start-dev"]
+    volumes:
+      - ./keycloak/volumes/postgres_data:/opt/jboss/keycloak/standalone/data
+    depends_on:
+      postgres:
+        condition: service_started
+
+  app:
+    image: postgres-deployment
+    container_name: postgres-deployment-container
+    ports:
+      - "9012:9012"
+    env_file:
+      - ./config/.env
+    volumes:
+      - ./volumes/logs:/app/logs
+      - ./ssl:/home/deployment/ssl
+      - ./keystore/cacerts:/usr/local/openjdk-21/lib/security/cacerts
+    depends_on:
+      - db
+
