@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+../.DS_Store
+../.idea/vcs.xml
+.DS_Store
